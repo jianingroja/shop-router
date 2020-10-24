@@ -19,9 +19,9 @@ function Item() {
   return (
     <div>
       {items.map((item) => (
-        <h1 key={item.itemId}>
+        <h3 className="item-name" key={item.itemId}>
           <Link to={`/shop/${item.itemId}`}> {item.item.name}</Link>
-        </h1>
+        </h3>
       ))}
     </div>
   );
